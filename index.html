@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+         <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Design Your Website</h2>
+    <p>Don't forget for like, comment, share, and subscribe</p>
+    <div class="buttons">
+      <a href="#">MORE INFORMATION?</a>
+      <a href="#">SUBSCRIBE</a>
+    </div>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <p>
+      <table>
+        <tr>
+          <td rowspan="12" width="150px">
+            <img src="sitaaa.jpeg" alt="" width="200px" height="300px" border="1">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Nama Lengkap</b></td> 
+          <td style="text-align: left;">: Masita Gani</td>
+       
+        </tr>
+
+        <tr>
+          <td style="text-align: left;"><b>NIM</b></td>
+          <td style="text-align: left;">: 16323038</td>
+        </tr>
+      
+        <tr>
+          <td style="text-align: left;"><b>TTL</b></td>
+          <td style="text-align: left;">: Wayame, 12 November 2000</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><b>Alamat</b></td>
+          <td style="text-align: left;">: Katemba</td>
+        </tr>
+      </table>
+    </p>
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+    <p>Ini adalah halaman audio dan video.</p>
+    <audio controls src="suaraHati devano.aac"></audio><br>
+    <video controls autoplay src="ini sita.mp4" width="250" height="250"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Hi, saya sita  </p>
+    <p>saya asalnya dari Ambon, saya menyukai hal-hal yang menarik bagi saya, contohnya saya suka memasak
+      ,saya suka membaca, selain itu juga saya menyukai pantai karna ombaknya yang tenang daripada bicaranya 
+      manusia-manusia berisik.
+    </p>
+    <p>Dalam hal pendidikan saya bukanlah anak yang pandai, namun saya hanya bermodalkan semangat untuk menjadi berprestasi,
+      walaupun selama ini tidak ada prestasi yang cukup membanggakan bagi saya,namun saya ingin terus menerus 
+      mencoba. karna setiap manusia pasti memiliki kemampuan atau keahlian yang berbeda-beda
+    </p>
+    <p>Sumber motivasi dan bimbingan saya terutama berasal dari orang tua,keluarga lalu sebagian yang lain 
+      berasal dari diri saya dan teman-teman
+    </p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita</h2>
+    <p>  <iframe src="https://travel.wego.com/berita/ora-beach-resort-fakta-fakta-menarik/" frameborder="-1000" width="500" height="350"> Tentang Ora Beach</iframe></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Masita Gani</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
